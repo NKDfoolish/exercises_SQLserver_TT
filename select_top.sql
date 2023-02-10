@@ -1,0 +1,19 @@
+-- bt1
+SELECT TOP 10 PERCENT WITH TIES *
+FROM Student
+ORDER BY birthdate DESC
+
+-- bt2
+SELECT TOP 5 WITH TIES *
+FROM Student
+ORDER BY len(fullname) DESC
+
+-- bt3
+SELECT TOP 3 WITH TIES *
+FROM Subject
+ORDER BY numoflesson DESC
+
+-- bt4
+SELECT TOP 20 PERCENT *
+FROM Subject
+ORDER BY credit DESC
